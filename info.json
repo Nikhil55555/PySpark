@@ -1,0 +1,22 @@
+{"metadata":
+        {"employee":
+					{                            
+					"read_location":"s3://<bucket name here>/filepath/filename",
+					"delta_location":"s3://<bucket name here>/filepath/filename",
+					"lookup":["emp_id"],
+					"table_headers":["emp_id","emp_name","emp_age","emp_salary"]
+					}
+        ,
+        "common":
+                {
+                "temp_read_location":"s3://<bucket name here>/filepath/filename/temp_src.csv",
+                "temp_write_location":"s3://<bucket name here>/filepath/temp_op/",
+                "alpha_name":"alpha",
+                "delta_name":"delta",
+                "bucket":"<bucket_name>",
+				"temp_src_key":"temp_src/temp_src.csv",
+				"temp_op_key":"temp_op/"
+				
+				}
+		}
+}
